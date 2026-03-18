@@ -1,1 +1,194 @@
 村
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>村の自己紹介 - 不思議の国</title>
+
+  <!-- アリス風フォント -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background: radial-gradient(circle, #fff8dc, #e6e6fa);
+      color: #333;
+    }
+
+    header {
+      font-family: 'Great Vibes', cursive;
+      background: repeating-linear-gradient(
+        45deg,
+        #ff4d4d,
+        #ff4d4d 20px,
+        #ffffff 20px,
+        #ffffff 40px
+      );
+      color: black;
+      text-align: center;
+      padding: 25px;
+      font-size: 2.5em;
+      letter-spacing: 2px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 3px dashed #9370db;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+    .card::before {
+      content: "♠ ♥ ♣ ♦";
+      position: absolute;
+      top: -10px;
+      right: 15px;
+      font-size: 1.2em;
+      color: #ff4d4d;
+    }
+
+    h2 {
+      color: #6a5acd;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #add8e6;
+      padding: 6px 12px;
+      border-radius: 12px;
+      margin: 5px;
+      border: 2px solid #6a5acd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #6a5acd;
+      color: white;
+      font-style: italic;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    /* 時計 */
+    .clock {
+      width: 120px;
+      height: 120px;
+      border: 5px solid #6a5acd;
+      border-radius: 50%;
+      position: relative;
+      margin: 20px auto;
+      background: #fff;
+    }
+
+    .hand {
+      position: absolute;
+      width: 50%;
+      height: 2px;
+      background: #333;
+      top: 50%;
+      transform-origin: 100%;
+      transform: rotate(90deg);
+    }
+
+    .hour {
+      height: 4px;
+      width: 35%;
+      left: 15%;
+      animation: rotateHour 43200s linear infinite;
+    }
+
+    .minute {
+      animation: rotateMinute 3600s linear infinite;
+    }
+
+    .second {
+      background: red;
+      animation: rotateSecond 60s linear infinite;
+    }
+
+    @keyframes rotateSecond {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes rotateMinute {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes rotateHour {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  🕰️ 村のワンダーランドプロフィール 🐇
+</header>
+
+<!-- 動く時計 -->
+<div class="clock">
+  <div class="hand hour"></div>
+  <div class="hand minute"></div>
+  <div class="hand second"></div>
+</div>
+
+<div class="container">
+
+  <div class="card">
+    <h2>🎩 名前</h2>
+    <p>村（むら）です！</p>
+    <p class="quote">"ここでは、みんなちょっと不思議なんだよ"</p>
+  </div>
+
+  <div class="card">
+    <h2>🐇 自己紹介</h2>
+    <p>
+      気がついたら不思議の国に迷い込んだみたいな、
+      ちょっとマイペースな村です。
+      楽しいことや面白いことを探すのが好き！
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>♣ 好きなもの</h2>
+    <div class="tag">お菓子</div>
+    <div class="tag">ティータイム</div>
+    <div class="tag">ゲーム</div>
+    <div class="tag">不思議な世界</div>
+  </div>
+
+  <div class="card">
+    <h2>🫖 メッセージ</h2>
+    <p>
+      このページに来てくれてありがとう！
+      一緒に不思議な時間を楽しめたら嬉しいな✨
+    </p>
+  </div>
+
+</div>
+
+<footer>
+  "Curiouser and curiouser!" - 村
+</footer>
+
+</body>
+</html>
